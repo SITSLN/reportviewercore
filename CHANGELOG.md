@@ -1,8 +1,9 @@
-# upcoming version
+# 15.1.14
  * Added missing System.Text.RegularExpressions.dll assembly reference
  * https support for server-side reports
  * Fixed chart HTML4/5 rendering
  * Fixed invalid PDF missing image placeholder format
+ * Fixed InvalidImage rendering in non-WinForms applications
 
 # 15.1.13
  * Fixed BinaryFormatter/ResX issues with PDF export on .NET 5
