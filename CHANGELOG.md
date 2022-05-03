@@ -1,3 +1,16 @@
+# upcoming version
+ * Fixed broken error messages in NETCore project due to missing string resources
+
+# 15.1.16
+ * Fixed ValidValues floating point culture-dependent formatting
+ * Custom system-wide culture (LOCALE_CUSTOM_UNSPECIFIED) workaround
+ * Multi-target .NET Core 3.1, .NET 5 and .NET 6 due to Microsoft.CodeAnalysis.VisualBasic dependencies
+
+# 15.1.15
+ * Fixed race condition in WinForms ReportViewer caused by missing thread abort in RefreshReport
+ * Removed SqlClient and OleDb dependencies
+ * .NET 6 compatibility
+
 # 15.1.14
  * Added missing System.Text.RegularExpressions.dll assembly reference
  * https support for server-side reports

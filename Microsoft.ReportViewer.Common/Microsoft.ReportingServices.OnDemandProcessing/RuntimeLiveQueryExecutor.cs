@@ -247,14 +247,7 @@ namespace Microsoft.ReportingServices.OnDemandProcessing
 		{
 			try
 			{
-				if (m_dataSet.Query.TimeOut == 0 && command is CommandWrapper && ((CommandWrapper)command).UnderlyingCommand is SqlCommand)
-				{
-					command.CommandTimeout = 2147483646;
-				}
-				else
-				{
-					command.CommandTimeout = m_dataSet.Query.TimeOut;
-				}
+				command.CommandTimeout = m_dataSet.Query.TimeOut;
 			}
 			catch (Exception innerException)
 			{
